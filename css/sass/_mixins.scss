@@ -1,0 +1,7 @@
+@mixin estilo-caja($top){
+	position:absolute;
+	background-color:rgba(0,0,0,0.6);
+	max-width:100%;
+	padding-right:150px;
+	top:$top;
+}

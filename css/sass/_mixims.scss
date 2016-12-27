@@ -1,0 +1,19 @@
+@mixin estilo-caja($top,$padding-right){
+	position:absolute;
+	background-color:rgba(0,0,0,0.6);
+	max-width:100%;
+	padding-right:$padding-right;
+	top:$top;
+}
+
+@mixin estilo-texto-caja($padding){
+	padding:$padding;
+	color:white;
+	font-family:$font-principal;
+}
+
+@mixin ancho-texto-caja(){
+	font-weight:lighter;
+	color:#DFD5D4;
+	font-size:12px;
+}

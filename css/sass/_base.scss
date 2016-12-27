@@ -1,0 +1,249 @@
+.title-news{
+	font-family:$font-principal;
+	color:$color-title;
+	span{
+		color:$color-principal;
+	}
+}
+
+.menu{
+	font-family: $font-principal;
+	padding:0;
+	padding-top:20px;
+	border-bottom:1px solid $color-principal;
+	li{
+		a{
+			color:$color-title;
+			text-decoration:none;
+			&:hover{
+				text-decoration:none;
+			}
+		}
+		&:hover{
+			border-bottom:2px solid $color-principal;
+		}
+		display:inline-block;
+		text-transform:uppercase;
+		padding:0 20px;
+		padding-bottom:10px;
+		&:first-of-type{
+		padding-left:0;
+		}
+	}
+}
+ 
+.input-group {
+	input {
+		border:none;
+		border-radius:0px;
+		font-family:$font-principal;
+	}
+	
+
+	#sizing-addon2{
+		background-color:$color-principal;
+		color:white;
+		border:none;
+		border-radius:0px;
+	}
+}
+
+.box-title {
+		background-color:$color-principal;
+		padding:10px 25px;
+		color:white;
+		position:relative;
+		top:10px;
+		font-family: $font-principal;
+		font-size:13px;
+		font-weight:lighter;
+}
+		
+
+.margen-section {
+	margin-top:25px;
+	margin-bottom:25px;
+	
+		.slider {
+			@extend .box-title;
+			padding:0px;
+			background-image:url(../img/1.png);
+			height:430px;
+			background-size:cover;
+			position:relative;
+				.caja-opacity {
+					@include estilo-caja(328px,150px);
+						.texto-caja	 {
+							@include estilo-texto-caja(15px);
+								p {
+									font-weight:lighter;
+									&:nth-child(2){
+										color:#DFD5D4;
+										font-size:12px;
+									}
+								}
+						}
+				}
+		}
+
+/*
+- Se puede hacer un @extend de las clases que están anidadas dentro de otras clases?
+- Para evitar repetir código en este caso cómo lo podría hacer?
+*/
+		.blog {
+			@extend .box-title;
+			padding:0px;
+			background-image:url(../img/6.png);
+			background-size:cover;	
+			height:250px;
+			margin-bottom:20px;
+			position:relative;
+				.caja-opacity {
+					@include estilo-caja(148px,100px);
+						.texto-caja	 {
+							@include estilo-texto-caja(15px);
+								p {
+									font-weight:lighter;
+									&:nth-child(2){
+										color:#DFD5D4;
+										font-size:12px;
+									}
+								}
+						}
+
+				}
+
+		 	
+		}
+		
+		.blog1 {
+			
+			background-image:url(../img/3-1.png);
+			background-size:cover;	
+			height:170px;
+			max-width:100%;
+			position:relative;
+				.caja-opacity {
+					@include estilo-caja(123px,26px);
+						.texto-caja	 {
+							@include estilo-texto-caja(10px);
+								p {
+									@include ancho-texto-caja();	
+									
+								}
+						}
+
+				}
+		}
+
+		.blog2 {
+
+			background-image:url(../img/4-1.png);
+			background-size:cover;	
+			height:170px;
+			max-width:100%;
+			position:relative;
+				.caja-opacity {
+					@include estilo-caja(123px,26px);
+						.texto-caja	 {
+							@include estilo-texto-caja(10px);
+								p {
+									@include ancho-texto-caja();
+								}
+						}
+
+				}
+		}
+
+}
+
+.section2 {
+	hr {
+		margin-top:0px;
+		margin-bottom:10px;
+	}
+	.columna {
+		padding:15px;
+		h4 {
+			border-bottom:1px solid $color-principal;
+			padding-bottom:8px;
+			margin-bottom:20px;
+			span {
+				color:$color-title;
+				padding-bottom:5px;
+				border-bottom:3px solid $color-principal;
+				text-transform:uppercase;
+			}
+		}
+		
+	}
+
+	.descripcion{
+		display:inline-block;
+		margin-bottom:15px;
+		padding:0;
+			h6 {
+				font-family:$font-principal;
+				color:$color-principal;
+			}
+			p {
+				font-size:12px;
+				margin-bottom:0;
+			}
+			span i {
+				font-size:10px;
+				padding-left:3px;
+				color:$color-principal;
+				&:nth-child(5){
+					color:$color-title;
+				}
+			}
+			
+	}
+	.arreglo {
+
+		.chao {
+			padding-top:25px;
+			font-size:12px;
+		}
+		.icon-style {
+			margin:0;
+			.fa-facebook{
+				background-color:#3b5998;
+				padding:25px 50px;
+				color:white;
+				font-size:30px;
+			}
+			.fa-twitter{
+				background-color:#00aced;
+				padding:25px 45px;
+				color:white;
+				font-size:30px;
+
+			}
+			.fa-rss {
+				background-color:#DF8304;
+				padding:25px 45px;
+				color:white;
+				font-size:30px;
+			}
+		}
+		
+			
+			
+	}
+
+}
+
+
+.section3 {
+	@extend .section2;
+	.imgen {
+		max-width:100%;
+	}
+
+}
+
+.borde {
+	border-bottom: 1px solid black;
+}
